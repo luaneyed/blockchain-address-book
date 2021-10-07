@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
-    "is-url": "^1.2.4",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "typeface-roboto": "^1.1.13",

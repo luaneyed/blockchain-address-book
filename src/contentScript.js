@@ -6,7 +6,6 @@
 import $ from "jquery";
 import 'bootstrap/js/dist/tooltip';
 import { enableSelectionEndEvent } from "./selection";
-var isUrl = require('is-url');
 
 //init environment======================================================================\
 var currentSetting = {};
@@ -96,7 +95,7 @@ enableSelectionEndEvent();
 //determineTooltipShowHide based on hover
 setInterval(async function() {
   // only work when tab is activated and when mousemove and no selected text
-  if (!selectedText && document.visibilityState == "visible" && mouseMoved && settingLoaded && currentSetting["translateOnHover"] === "true") {
+  if (!selectedText && document.visibilityState == "visible" && mouseMoved && settingLoaded) {
     let word = getMouseOverWord(clientX, clientY);
     await processWord(word, "mouseover");
   }

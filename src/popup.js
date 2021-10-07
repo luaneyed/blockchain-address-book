@@ -27,11 +27,6 @@ var tooltipFontSizeList = {}; //font size 5 to 20
 for (let i = 5; i < 21; i++) {
   tooltipFontSizeList[String(i)] = String(i);
 }
-var detectTypeList = {
-  'Word': 'word',
-  'Sentence': 'sentence',
-  'Container': 'container'
-}
 
 var tooltipWidth={};
 for (let i = 100; i < 600; i+=100) {
@@ -43,21 +38,9 @@ var settingList = {
     "description": "Enable Tooltip",
     "optionList": toggleList
   },
-  "translateOnHover": {
-    "description": "Translate on hover",
-    "optionList": toggleList
-  },
-  "translateOnSelection": {
-    "description": "Translate on selection",
-    "optionList": toggleList
-  },
   "keyDownTooltip": {
     "description": "Tooltip Activation Hold Key",
     "optionList": keyList
-  },
-  "detectType": {
-    "description": "Detect Type",
-    "optionList": detectTypeList
   },
   "tooltipFontSize": {
     "description": "Tooltip Font Size",
