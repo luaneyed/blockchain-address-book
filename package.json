@@ -1,0 +1,36 @@
+{
+  "name": "blockchain-address-book",
+  "version": "0.1.0",
+  "description": "Blockchain Address Book",
+  "private": true,
+  "scripts": {
+    "watch": "webpack --mode=development --watch --config config/webpack.config.js",
+    "build": "rimraf build && webpack --mode=production --config config/webpack.config.js"
+  },
+  "devDependencies": {
+    "@mdi/font": "^5.9.55",
+    "@mdi/js": "^5.9.55",
+    "copy-webpack-plugin": "^6.4.1",
+    "css-loader": "^4.3.0",
+    "deepmerge": "^4.2.2",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^0.10.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.7",
+    "sass-loader": "^11.0.1",
+    "size-plugin": "^2.0.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "is-url": "^1.2.4",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "typeface-roboto": "^1.1.13",
+    "vue": "^2.6.12",
+    "vuetify": "^2.4.4"
+  }
+}
