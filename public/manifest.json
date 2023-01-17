@@ -1,15 +1,17 @@
 {
+  "manifest_version": 3,
   "name": "__MSG_appName__",
   "description": "__MSG_appDesc__",
   "default_locale": "en",
   "version": "0.1.29",
-  "manifest_version": 2,
   "icons": {
     "128": "icons/icon_128.png"
   },
   "permissions": ["contextMenus", "storage"],
   "web_accessible_resources": ["pdfjs/web/viewer.html"],
-  "content_security_policy": "script-src 'self' 'unsafe-eval';  object-src 'none'",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval' ;  object-src 'none'"
+  },
   "content_scripts": [{
     "js": ["contentScript.js"],
     "css": ["bootstrapcustom.min.css"],
@@ -20,7 +22,7 @@
   "background": {
     "scripts": ["background.js"]
   },
-  "browser_action": {
+  "action": {
     "default_title": "Blockchain Address",
     "default_popup": "popup.html"
   },
